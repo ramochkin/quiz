@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Bootcamp Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index2.html">highscores</a>
+        <p>Time: <span id="timer">0</span></p>
+    </header>
+    <main>
+        <div id="welcome">
+            <h1>Welcome to the test!</h1>
+            <p>This quiz will assess your knowledge on HTML, CSS, and JavaScript</p>
+            <button id="beginButton">Begin!</button>
+        </div>
+        <div id="questions" class="hide">
+            <h1 id="placeQuestionHere"></h1>
+            <div id="answerButtons"></div>
+        </div>
+        <div id="highScore" class="hide">
+            <h1>Game Over</h1>
+            <p>Your score is <span id="finalScore"> </span></p>
+            <p>Place your initials here: <input type="text" id="studentInitials"/> <button id="submit">Submit</button></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
