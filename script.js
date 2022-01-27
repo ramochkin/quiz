@@ -126,7 +126,7 @@ function gameOver(){
 function saveHighScore(){
     var fLInitials = initials.value;
 
-    var highscores = JSON.parse(localStorage.highscores) || [];
+    var highscores = JSON.parse(localStorage.getItem('highscores')) || [];
 
     var dataSet = {
         initials: fLInitials,
@@ -136,10 +136,12 @@ function saveHighScore(){
     highscores.push(dataSet)
 
     localStorage.setItem('highscores', JSON.stringify(highscores))
-    
+    console.log(highscores)
 }
 
 
 //eventlisteners go here
 startButton.addEventListener('click', start)
 submitButton.addEventListener('click', saveHighScore)
+
+// JSON.parse(localStorage.highscores) ||
