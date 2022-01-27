@@ -92,7 +92,7 @@ function showQuestion() {
 }
 
 function checkAnswer() {
-    console.log(this.value)
+    // console.log(this.value)
 
     //if the answer is wrong deduct 10 from the time. 
     if (this.value !== questionArr[activeQuestion].answer) {
@@ -136,7 +136,7 @@ function saveHighScore(){
     highscores.push(dataSet)
 
     localStorage.setItem('highscores', JSON.stringify(highscores))
-    console.log(highscores)
+    // console.log(highscores)
 }
 
 
